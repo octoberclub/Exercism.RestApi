@@ -40,7 +40,7 @@ public class RestApiTests
         Assert.Equal(expected, actual);
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Both_users_have_0_balance()
     {
         var url = "/iou";
