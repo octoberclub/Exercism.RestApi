@@ -15,7 +15,7 @@ public class RestApiTests
         Assert.Equal(expected, actual);
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Add_user()
     {
         var url = "/add";
@@ -25,9 +25,10 @@ public class RestApiTests
         var actual = sut.Post(url, payload);
         var expected = "{\"name\":\"Adam\",\"owes\":{},\"owed_by\":{},\"balance\":0.0}";
         Assert.Equal(expected, actual);
+        
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Get_single_user()
     {
         var url = "/users";
